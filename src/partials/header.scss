@@ -1,0 +1,9 @@
+header {
+    @include flex-around-center;
+    height: 80px;
+    padding: 10px;
+    img {
+        height: 80%;
+        cursor: pointer;
+    }
+}
