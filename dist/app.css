@@ -25,6 +25,10 @@ input:hover, input:active, input:focus {
   border-radius: 10px 10px 0 0;
 }
 
+small {
+  color: grey;
+}
+
 header {
   display: flex;
   justify-content: space-around;
@@ -42,14 +46,19 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .music-box {
   width: 300px;
-  height: 500px;
+  height: 400px;
   margin: 20px;
+  padding: 20px;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.music-box img {
+  height: 250px;
 }
 .music-box:hover {
   border: 1px solid #1DB954;
