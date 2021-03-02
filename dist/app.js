@@ -22,7 +22,8 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 var app = new Vue({
   el: '#app',
   data: {
-    disks: []
+    disks: [],
+    input: ''
   },
   created: function created() {
     var _this = this;
@@ -34,7 +35,7 @@ var app = new Vue({
     }).then(function (result) {
       var _this$disks;
 
-      console.log(result);
+      console.log(result.data.data);
 
       (_this$disks = _this.disks).push.apply(_this$disks, _toConsumableArray(result.data));
 

@@ -22,31 +22,31 @@
 
             <img src="img/spotify.png" alt="Logo">
 
-            <input type="text" placeholder="Search">
+            <input type="text" placeholder="Search" v-model="input">
 
         </header>
 
         <!-- MAIN -->
         <main>
 
-            <div v-for="disk in disks" class="music-box">
+            <div v-for="disk in disks" v-if="disk.title.toLowerCase().includes(input.toLowerCase()) || disk.author.toLowerCase().includes(input.toLowerCase())" class="music-box">
 
                 <!-- Cover -->
                 <img :src="disk.cover_path" alt="Cover">
 
                 <!-- Title -->
-                <h3>{{disk}}</h3>
+                <h3>{{disk.title}}</h3>
 
                 <!-- Author -->
-                <p></p>
+                <p>{{disk.author}}</p>
 
                 <!-- Year of release -->
-                <p><small></small></p>
+                <p><small>{{disk.year}}</small></p>
 
             </div>
 
         </main>
-
+        
     </div>
     
 
