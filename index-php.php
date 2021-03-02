@@ -47,10 +47,8 @@
 
                 </div>
         <?php } ?>
-            
+
     </main>
     
-
-    <script src="dist/app.js"></script>
 </body>
 </html>
